@@ -1,5 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+Converti i singoli file .tex in un .csv unico con tag html (per DB sito libretto dei canti).
+"""
+
 import os, re
-#import pandas as pd
 
 # INPUT and OUTPUT Files / Folders
 InputMainTexFile = os.getcwd() + '\\libretto_canti.tex'

@@ -89,7 +89,6 @@ with open(OutputFolder + 'Songs_DB.csv', 'w') as fout:
             '&':            ' - ',
             '  ':           ' ',
         }
-
         for RemUpd in RemUpdTexts:
             TxtInMod = [t.replace(RemUpd, RemUpdTexts[RemUpd]) for t in TxtInMod]
 
@@ -114,7 +113,6 @@ with open(OutputFolder + 'Songs_DB.csv', 'w') as fout:
                 neold = N_Sp[CurrRefr+1]
                 Txt_Bl.append(TxtInMod[nsold+1:neold])
 
-
         # Write number and title
         fout.write(f'{nsong+1};"{TxtInMod[0]}";')
 
@@ -137,5 +135,3 @@ with open(OutputFolder + 'Songs_DB.csv', 'w') as fout:
 
         # End of Line
         fout.write('"\n')
-
-

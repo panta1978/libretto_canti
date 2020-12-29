@@ -139,38 +139,3 @@ with open(OutputFolder + 'Songs_DB.csv', 'w') as fout:
         fout.write('"\n')
 
 
-
-
-        '''
-        # Screen print (DEBUG)
-        print(TxtInMod[0].upper())
-        print(' ')
-        for tb in Txt_Bl:
-            for t in tb:
-                print(t)
-            print(' ')
-        print('\n\n=====================================================\n\n')
-        '''
-
-
-'''
-# Open Output File
-with open(OutputFolder + InputFile[:-4] + '.html', 'w', encoding='UTF8') as f:
-    # Write Title
-    f.write(f'<p class=\'nome-canto\'>{nsong} ' + TxtInMod[0].upper() + '</p>\n\n')
-
-    # Write blocks
-    for (tb, ir) in zip(Txt_Bl, IsRefrain):
-        if ir:
-            f.write('<p class=\'canto-ritornello\'>\n')
-        else:
-            f.write('<p class=\'canto-testo\'>\n')
-        for (n, t) in enumerate(tb):
-            if n < len(tb) - 1:
-                f.write(t + '</br>\n')
-            else:
-                f.write(t + '\n')
-        f.write('</p>\n\n')
-
-'''
-

@@ -14,7 +14,6 @@ OutputFolder = os.getcwd() + '\\html\\'
 with open(InputMainTexFile, 'r', encoding='UTF-8') as f:
     TxtMain = f.readlines()
 InputFiles = [t[13:t.find('}')]+'.tex' for t in TxtMain if t.startswith('\\input{canti')]
-#InputFiles = [f for f in os.listdir(InputFolder) if f.endswith('.tex')]
 
 # Open Output File
 with open(OutputFolder + 'Songs_DB.csv', 'w') as fout:
